@@ -1,0 +1,27 @@
+@media screen and (min-width:700px){
+    .index {
+        // background-image: url('../../../assets/bar.jpg');
+        background-position:bottom;
+        // background-repeat:no-repeat;
+        // background-size:cover;
+        .index-container {
+            .title {
+                // two lines  top 
+                padding-top:3em; 
+                .main {
+                    // two lines top & center
+                    font-size:5.5em;
+                
+                    // one line top
+                    // font-size:5em;
+                    // padding-top:.5em;                    
+                }
+                .tagline {
+                    // one line top
+                    // font-size: 3em;
+                }
+            }
+        }
+    }
+    
+}
