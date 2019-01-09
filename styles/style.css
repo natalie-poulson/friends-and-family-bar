@@ -52,18 +52,19 @@ table {
   border-spacing: 0;
 }
 
-body {
-  width: 100vw;
-  height: 100vh;
+html, body {
+  font-size: 16px;
+  height: 100%;
+  width: 100%;
 }
 
 .index {
   width: 100%;
   height: 100%;
-  background-image: url("../../assets/coming-soon.jpg");
+  background-image: url("../../assets/bar.jpg");
+  background-position: left;
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: center;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -73,10 +74,11 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  overflow: hidden;
 }
 
 .index .index-container {
-  width: 90%;
+  width: 95%;
   height: 95%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -85,50 +87,90 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
 }
 
-.index .index-container h1 {
-  color: #e23c01;
-  font-family: 'Montserrat', sans-serif;
-  font-weight: 600;
+.index .index-container .name {
+  -webkit-transform: rotate(-18deg);
+          transform: rotate(-18deg);
+  text-align: right;
+  position: absolute;
+  bottom: 42vh;
+  left: 0vh;
 }
 
-.index .index-container .title {
+.index .index-container .name h1 {
+  font-family: "Bungee Shade", cursive;
+  color: #4f9275;
+  font-size: 7vh;
+}
+
+.index .index-container .name #friends {
+  padding-left: 7rem;
+}
+
+.index .index-container .name #and {
+  padding-top: 10vh;
+  padding-bottom: 10vh;
+  padding-left: 3rem;
+  text-align: left;
+}
+
+.index .index-container .name #family {
+  padding-right: 3.5rem;
+}
+
+.index .index-container .tagline {
+  font-family: "Roboto", sans-serif;
+  font-size: 3.5vh;
+  color: white;
   text-align: center;
-  padding-top: 1em;
-}
-
-.index .index-container .title .main {
-  text-transform: uppercase;
-  font-size: 4em;
-}
-
-.index .index-container .title .tagline {
-  font-weight: 300;
-  padding-top: .5em;
-  font-size: 1.8em;
+  position: absolute;
+  bottom: 25%;
 }
 
 .index .index-container .location {
-  font-size: 1.5em;
+  font-family: "Bungee Shade", cursive;
   text-align: center;
+  font-size: 3vh;
+  position: absolute;
+  bottom: 2%;
+  color: #4f9275;
 }
 
-@media screen and (min-width: 700px) {
+@media only screen and (min-width: 500px) {
   .index {
-    background-position: bottom;
+    background-position: top;
   }
-  .index .index-container .title {
-    padding-top: 3em;
+  .index .index-container .name {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    position: static;
+    margin-top: 5vh;
+    margin-right: 10vh;
   }
-  .index .index-container .title .main {
-    font-size: 5.5em;
+  .index .index-container .name h1 {
+    font-size: 8vh;
+  }
+  .index .index-container .name #friends, .index .index-container .name #and, .index .index-container .name #family {
+    padding: .75rem;
+  }
+  .index .index-container .tagline {
+    position: static;
+    padding-top: 4vw;
   }
 }
 /*# sourceMappingURL=style.css.map */

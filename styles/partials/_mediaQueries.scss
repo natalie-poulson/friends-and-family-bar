@@ -1,27 +1,41 @@
-@media screen and (min-width:700px){
+@media only screen and (min-width:500px){
     .index {
-        // background-image: url('../../../assets/bar.jpg');
-        background-position:bottom;
-        // background-repeat:no-repeat;
-        // background-size:cover;
+        background-position:top;
         .index-container {
-            .title {
-                // two lines  top 
-                padding-top:3em; 
-                .main {
-                    // two lines top & center
-                    font-size:5.5em;
-                
-                    // one line top
-                    // font-size:5em;
-                    // padding-top:.5em;                    
+            .name {
+                display:flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items:center;
+                position:static;
+                margin-top:5vh;
+                margin-right:10vh;
+                h1 {
+                    font-size:8vh;
                 }
-                .tagline {
-                    // one line top
-                    // font-size: 3em;
+                #friends, #and, #family {
+                    padding:.75rem;
                 }
+            }
+            .tagline {
+                position:static;
+                padding-top:4vw;
             }
         }
     }
-    
 }
+
+// @media only screen and (min-width:1000px){
+//     .index{
+//         .index-container {
+//             .name {
+//                 h1 {
+//                     font-size:4.5rem;
+//                 }
+//             }
+//             .tagline {
+//                 font-size:2rem;
+//             }
+//         }
+//     }
+// }

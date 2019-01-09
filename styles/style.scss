@@ -1,64 +1,74 @@
 @import './partials/reset';
-
-body {
-    width:100vw;
-    height:100vh;
+@import './partials/variables';
+// FOR COLOR USE HSLA VALUES
+// hue
+// saturation
+// lightness
+// alpha or opacity
+html,body {
+    font-size:16px;
+    height:100%;
+    width:100%;
 }
 
 .index {
     width:100%;
     height:100%;
-    background-image: url('../../assets/coming-soon.jpg');
-    // background-image: url('../../assets/bar.jpg');
+    // background: linear-gradient(rgba(0,0,0,.3), rgba(0,0,0,.3)), url('../../assets/bar.jpg');
+    background-image: url('../../assets/bar.jpg');
+    background-position:left;
     background-repeat:no-repeat;
     background-size:cover;
-    background-position:center;
     display:flex;
     justify-content: center;
     align-items: center;
+    overflow:hidden;
     .index-container {
-        width:90%;
+        width:95%;
         height:95%;
         display:flex;
         flex-direction:column;
-        justify-content: space-between;
         align-items:center;
-        h1 {
-            // color:rgb(105,45,75);
-            color:rgb(226,60,1); //red
-            // color:rgb(78,148,118); // dark green
-            // color:rgb(218,140,0); // orange
-            // color:lightcyan; // cyan
-            font-family: 'Montserrat', sans-serif;
-            font-weight:600;
+        .name {
+            transform:rotate(-18deg);
+            text-align:right;
+            position:absolute;
+            bottom:42vh;
+            left:0vh;
+            h1 {
+                font-family: $primary-font;
+                // color:white;
+                color:hsl(154,30,44);
+                font-size:7vh;
+            }
+            #friends{
+                padding-left:7rem;
+            }
+            #and {
+                padding-top:10vh;
+                padding-bottom:10vh;
+                padding-left:3rem;
+                text-align:left;
+            }
+            #family {
+                padding-right:3.5rem;
+            }
         }
-        .title {
+        .tagline {
+            font-family: $secondary-font;
+            font-size:3.5vh;
+            color:white;
             text-align:center;
-            padding-top:1em;
-            .main {
-                text-transform: uppercase;
-                // two lines top and center
-                font-size:4em; 
-
-                // one line top 
-                // font-size:2em;
-                // padding-top:5em;
-
-            }
-            .tagline {
-                font-weight:300;
-                padding-top:.5em;
-
-                //two lines top and center 
-                font-size:1.8em; 
-
-                // one line top
-                // font-size:1.5em;
-            }
+            position:absolute;
+            bottom:25%;
         }
         .location {
-            font-size:1.5em;
+            font-family: $primary-font;
             text-align:center;
+            font-size:3vh;
+            position:absolute;
+            bottom:2%;
+            color:hsl(154,30,44);
         }
     }
 }
