@@ -1,6 +1,20 @@
+@media only screen and (min-width:375px) and (orientation: landscape){
+    html,body {
+        font-size:16px;
+    }
+    #friends, #and, #family {
+        padding:.75rem;
+    }
+}
+
 @media only screen and (min-width:500px){
+    html,body {
+        font-size:16px;
+    }
     .index {
         background-position:top;
+        background-image: url('../../assets/bar.jpg');
+
         .index-container {
             .name {
                 display:flex;
@@ -11,6 +25,7 @@
                 margin-top:5vh;
                 margin-right:10vh;
                 h1 {
+                    color:hsl(154,30,44); 
                     font-size:8vh;
                 }
                 #friends, #and, #family {
@@ -21,21 +36,9 @@
                 position:static;
                 padding-top:4vw;
             }
+            .location {
+                color:hsl(154,30,44);
+            }
         }
     }
 }
-
-// @media only screen and (min-width:1000px){
-//     .index{
-//         .index-container {
-//             .name {
-//                 h1 {
-//                     font-size:4.5rem;
-//                 }
-//             }
-//             .tagline {
-//                 font-size:2rem;
-//             }
-//         }
-//     }
-// }

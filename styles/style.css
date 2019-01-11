@@ -61,7 +61,8 @@ html, body {
 .index {
   width: 100%;
   height: 100%;
-  background-image: url("../../assets/bar.jpg");
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.3)), to(rgba(0, 0, 0, 0.3))), url("../../assets/bar.jpg");
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../../assets/bar.jpg");
   background-position: left;
   background-repeat: no-repeat;
   background-size: cover;
@@ -97,13 +98,13 @@ html, body {
           transform: rotate(-18deg);
   text-align: right;
   position: absolute;
-  bottom: 42vh;
-  left: 0vh;
+  bottom: 42%;
+  left: 0%;
 }
 
 .index .index-container .name h1 {
   font-family: "Bungee Shade", cursive;
-  color: #4f9275;
+  color: white;
   font-size: 7vh;
 }
 
@@ -136,13 +137,26 @@ html, body {
   text-align: center;
   font-size: 3vh;
   position: absolute;
-  bottom: 2%;
-  color: #4f9275;
+  bottom: 1.25%;
+  color: white;
+}
+
+@media only screen and (min-width: 375px) and (orientation: landscape) {
+  html, body {
+    font-size: 16px;
+  }
+  #friends, #and, #family {
+    padding: .75rem;
+  }
 }
 
 @media only screen and (min-width: 500px) {
+  html, body {
+    font-size: 16px;
+  }
   .index {
     background-position: top;
+    background-image: url("../../assets/bar.jpg");
   }
   .index .index-container .name {
     display: -webkit-box;
@@ -163,6 +177,7 @@ html, body {
     margin-right: 10vh;
   }
   .index .index-container .name h1 {
+    color: #4f9275;
     font-size: 8vh;
   }
   .index .index-container .name #friends, .index .index-container .name #and, .index .index-container .name #family {
@@ -171,6 +186,9 @@ html, body {
   .index .index-container .tagline {
     position: static;
     padding-top: 4vw;
+  }
+  .index .index-container .location {
+    color: #4f9275;
   }
 }
 /*# sourceMappingURL=style.css.map */
