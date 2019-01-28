@@ -133,12 +133,28 @@ html, body {
 }
 
 .index .index-container .location {
+  width: 95%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   font-family: "Bungee Shade", cursive;
   text-align: center;
   font-size: 3vh;
   position: absolute;
   bottom: 1.25%;
   color: white;
+}
+
+.index .index-container .location a {
+  color: white;
+}
+
+.index .index-container .location a:hover {
+  -webkit-transform: scale(1.5);
+          transform: scale(1.5);
 }
 
 @media only screen and (min-width: 375px) and (orientation: landscape) {
@@ -189,6 +205,13 @@ html, body {
   }
   .index .index-container .location {
     color: #4f9275;
+  }
+  .index .index-container .location a {
+    color: #4f9275;
+  }
+  .index .index-container .location a:hover {
+    -webkit-transform: scale(1.5);
+            transform: scale(1.5);
   }
 }
 /*# sourceMappingURL=style.css.map */

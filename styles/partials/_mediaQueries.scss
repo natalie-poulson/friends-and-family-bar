@@ -38,6 +38,12 @@
             }
             .location {
                 color:hsl(154,30,44);
+                a {
+                    color:hsl(154,30,44);
+                    &:hover {
+                        transform:scale(1.5);
+                    }
+                }
             }
         }
     }

@@ -63,12 +63,21 @@ html,body {
             bottom:25%;
         }
         .location {
+            width:95%;
+            display:flex;
+            justify-content: space-between;
             font-family: $primary-font;
             text-align:center;
             font-size:3vh;
             position:absolute;
             bottom:1.25%;
             color:white;
+            a {
+                color:white;
+                &:hover {
+                    transform:scale(1.5);
+                }
+            }
         }
     }
 }
