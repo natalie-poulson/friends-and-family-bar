@@ -58,9 +58,7 @@ html, body {
   width: 100%;
 }
 
-.index {
-  width: 100%;
-  height: 100%;
+body {
   background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.3)), to(rgba(0, 0, 0, 0.3))), url("../../assets/bar.jpg");
   background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../../assets/bar.jpg");
   background-position: left;
@@ -78,7 +76,7 @@ html, body {
   overflow: hidden;
 }
 
-.index .index-container {
+body .index-container {
   width: 95%;
   height: 95%;
   display: -webkit-box;
@@ -93,7 +91,7 @@ html, body {
           align-items: center;
 }
 
-.index .index-container .name {
+body .index-container .name {
   -webkit-transform: rotate(-18deg);
           transform: rotate(-18deg);
   text-align: right;
@@ -102,59 +100,98 @@ html, body {
   left: 0%;
 }
 
-.index .index-container .name h1 {
+body .index-container .name h1 {
   font-family: "Bungee Shade", cursive;
   color: white;
   font-size: 7vh;
 }
 
-.index .index-container .name #friends {
+body .index-container .name #friends {
   padding-left: 7rem;
 }
 
-.index .index-container .name #and {
+body .index-container .name #and {
   padding-top: 10vh;
   padding-bottom: 10vh;
   padding-left: 3rem;
   text-align: left;
 }
 
-.index .index-container .name #family {
+body .index-container .name #family {
   padding-right: 3.5rem;
 }
 
-.index .index-container .tagline {
+body .index-container .soon {
   font-family: "Roboto", sans-serif;
   font-size: 3.5vh;
   color: white;
-  text-align: center;
+  width: 100%;
   position: absolute;
   bottom: 25%;
+  -webkit-animation-name: squiggle;
+          animation-name: squiggle;
+  -webkit-animation-duration: 4s;
+          animation-duration: 4s;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
 }
 
-.index .index-container .location {
-  width: 95%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+body .index-container .location {
   font-family: "Bungee Shade", cursive;
   text-align: center;
   font-size: 3vh;
   position: absolute;
-  bottom: 1.25%;
+  bottom: 4%;
   color: white;
 }
 
-.index .index-container .location a {
+body .index-container .contact {
+  font-size: 2.5vh;
+  text-align: center;
+  font-size: 2vh;
+  font-family: "Roboto", sans-serif;
   color: white;
+  text-decoration: none;
+  position: absolute;
+  bottom: 1%;
 }
 
-.index .index-container .location a:hover {
+body .index-container .contact:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+
+body .index-container .social {
+  font-size: 3vh;
+  color: white;
+  position: absolute;
+  top: 2%;
+  right: 2%;
+}
+
+body .index-container .social:hover {
   -webkit-transform: scale(1.5);
           transform: scale(1.5);
+}
+
+@-webkit-keyframes squiggle {
+  0% {
+    left: 0;
+  }
+  100% {
+    left: 100%;
+  }
+}
+
+@keyframes squiggle {
+  0% {
+    left: 0;
+  }
+  100% {
+    left: 100%;
+  }
 }
 
 @media only screen and (min-width: 375px) and (orientation: landscape) {
@@ -170,11 +207,13 @@ html, body {
   html, body {
     font-size: 16px;
   }
-  .index {
+  body {
     background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
     background-image: url("../../assets/bar.jpg");
   }
-  .index .index-container .name {
+  body .index-container .name {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -192,26 +231,34 @@ html, body {
     margin-top: 5vh;
     margin-right: 10vh;
   }
-  .index .index-container .name h1 {
+  body .index-container .name h1 {
     color: #4f9275;
-    font-size: 8vh;
+    font-size: 8.5vh;
   }
-  .index .index-container .name #friends, .index .index-container .name #and, .index .index-container .name #family {
+  body .index-container .name #friends, body .index-container .name #and, body .index-container .name #family {
     padding: .75rem;
   }
-  .index .index-container .tagline {
-    position: static;
+  body .index-container .soon {
+    bottom: 40%;
     padding-top: 4vw;
+    font-size: 4.5vh;
   }
-  .index .index-container .location {
+  body .index-container .location {
+    font-size: 4vh;
     color: #4f9275;
+    bottom: 4.5%;
   }
-  .index .index-container .location a {
-    color: #4f9275;
+  body .index-container .social {
+    top: 95%;
+    font-size: 4vh;
   }
-  .index .index-container .location a:hover {
-    -webkit-transform: scale(1.5);
-            transform: scale(1.5);
+  body .index-container .contact {
+    font-size: 3vh;
+    left: 2%;
+  }
+  body .index-container .contact:hover {
+    -webkit-transform: scale(1.05);
+            transform: scale(1.05);
   }
 }
 /*# sourceMappingURL=style.css.map */
