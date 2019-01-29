@@ -121,21 +121,22 @@ body .index-container .name #family {
   padding-right: 3.5rem;
 }
 
-body .index-container .soon {
+body .index-container .c {
   font-family: "Roboto", sans-serif;
   font-size: 3.5vh;
   color: white;
   width: 100%;
   position: absolute;
   bottom: 25%;
-  -webkit-animation-name: squiggle;
-          animation-name: squiggle;
-  -webkit-animation-duration: 4s;
-          animation-duration: 4s;
-  -webkit-animation-timing-function: linear;
-          animation-timing-function: linear;
-  -webkit-animation-iteration-count: infinite;
-          animation-iteration-count: infinite;
+  -webkit-animation: xAxis 3.5s infinite ease-in;
+          animation: xAxis 3.5s infinite ease-in;
+}
+
+body .index-container .c:after {
+  display: block;
+  content: 'coming soon';
+  -webkit-animation: yAxis 3.5s infinite ease-out;
+          animation: yAxis 3.5s infinite ease-out;
 }
 
 body .index-container .location {
@@ -191,6 +192,98 @@ body .index-container .social:hover {
   }
   100% {
     left: 100%;
+  }
+}
+
+@-webkit-keyframes yAxis {
+  10% {
+    -webkit-transform: translateY(30px);
+            transform: translateY(30px);
+  }
+  40% {
+    -webkit-transform: translateY(-30px);
+            transform: translateY(-30px);
+  }
+  70% {
+    -webkit-transform: translateY(30px);
+            transform: translateY(30px);
+  }
+  100% {
+    -webkit-transform: translateY(-30px);
+            transform: translateY(-30px);
+  }
+}
+
+@keyframes yAxis {
+  10% {
+    -webkit-transform: translateY(30px);
+            transform: translateY(30px);
+  }
+  40% {
+    -webkit-transform: translateY(-30px);
+            transform: translateY(-30px);
+  }
+  70% {
+    -webkit-transform: translateY(30px);
+            transform: translateY(30px);
+  }
+  100% {
+    -webkit-transform: translateY(-30px);
+            transform: translateY(-30px);
+  }
+}
+
+@-webkit-keyframes xAxis {
+  0% {
+    -webkit-transform: translateX(-10%);
+            transform: translateX(-10%);
+  }
+  10% {
+    -webkit-transform: translateX(10%);
+            transform: translateX(10%);
+  }
+  30% {
+    -webkit-transform: translateX(30%);
+            transform: translateX(30%);
+  }
+  50% {
+    -webkit-transform: translateX(50%);
+            transform: translateX(50%);
+  }
+  70% {
+    -webkit-transform: translateX(70%);
+            transform: translateX(70%);
+  }
+  100% {
+    -webkit-transform: translateX(100%);
+            transform: translateX(100%);
+  }
+}
+
+@keyframes xAxis {
+  0% {
+    -webkit-transform: translateX(-10%);
+            transform: translateX(-10%);
+  }
+  10% {
+    -webkit-transform: translateX(10%);
+            transform: translateX(10%);
+  }
+  30% {
+    -webkit-transform: translateX(30%);
+            transform: translateX(30%);
+  }
+  50% {
+    -webkit-transform: translateX(50%);
+            transform: translateX(50%);
+  }
+  70% {
+    -webkit-transform: translateX(70%);
+            transform: translateX(70%);
+  }
+  100% {
+    -webkit-transform: translateX(100%);
+            transform: translateX(100%);
   }
 }
 
