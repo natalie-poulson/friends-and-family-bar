@@ -121,7 +121,7 @@ body .index-container .name #family {
   padding-right: 3.5rem;
 }
 
-body .index-container .c {
+body .index-container .soon {
   font-family: "Roboto", sans-serif;
   font-size: 3.5vh;
   color: white;
@@ -132,9 +132,9 @@ body .index-container .c {
           animation: xAxis 3.5s infinite ease-in;
 }
 
-body .index-container .c:after {
+body .index-container .soon:after {
   display: block;
-  content: 'coming soon';
+  content: 'coming';
   -webkit-animation: yAxis 3.5s infinite ease-out;
           animation: yAxis 3.5s infinite ease-out;
 }
@@ -177,34 +177,20 @@ body .index-container .social:hover {
           transform: scale(1.5);
 }
 
-@-webkit-keyframes squiggle {
-  0% {
-    left: 0;
-  }
-  100% {
-    left: 100%;
-  }
-}
-
-@keyframes squiggle {
-  0% {
-    left: 0;
-  }
-  100% {
-    left: 100%;
-  }
-}
-
 @-webkit-keyframes yAxis {
-  10% {
-    -webkit-transform: translateY(30px);
-            transform: translateY(30px);
-  }
-  40% {
+  0% {
     -webkit-transform: translateY(-30px);
             transform: translateY(-30px);
   }
-  70% {
+  25% {
+    -webkit-transform: translateY(30px);
+            transform: translateY(30px);
+  }
+  50% {
+    -webkit-transform: translateY(-30px);
+            transform: translateY(-30px);
+  }
+  75% {
     -webkit-transform: translateY(30px);
             transform: translateY(30px);
   }
@@ -215,15 +201,19 @@ body .index-container .social:hover {
 }
 
 @keyframes yAxis {
-  10% {
-    -webkit-transform: translateY(30px);
-            transform: translateY(30px);
-  }
-  40% {
+  0% {
     -webkit-transform: translateY(-30px);
             transform: translateY(-30px);
   }
-  70% {
+  25% {
+    -webkit-transform: translateY(30px);
+            transform: translateY(30px);
+  }
+  50% {
+    -webkit-transform: translateY(-30px);
+            transform: translateY(-30px);
+  }
+  75% {
     -webkit-transform: translateY(30px);
             transform: translateY(30px);
   }
@@ -235,24 +225,24 @@ body .index-container .social:hover {
 
 @-webkit-keyframes xAxis {
   0% {
-    -webkit-transform: translateX(-10%);
-            transform: translateX(-10%);
+    -webkit-transform: translateX(0%);
+            transform: translateX(0%);
   }
-  10% {
-    -webkit-transform: translateX(10%);
-            transform: translateX(10%);
+  20% {
+    -webkit-transform: translateX(20%);
+            transform: translateX(20%);
   }
-  30% {
-    -webkit-transform: translateX(30%);
-            transform: translateX(30%);
+  40% {
+    -webkit-transform: translateX(40%);
+            transform: translateX(40%);
   }
-  50% {
-    -webkit-transform: translateX(50%);
-            transform: translateX(50%);
+  60% {
+    -webkit-transform: translateX(60%);
+            transform: translateX(60%);
   }
-  70% {
-    -webkit-transform: translateX(70%);
-            transform: translateX(70%);
+  80% {
+    -webkit-transform: translateX(80%);
+            transform: translateX(80%);
   }
   100% {
     -webkit-transform: translateX(100%);
@@ -262,24 +252,24 @@ body .index-container .social:hover {
 
 @keyframes xAxis {
   0% {
-    -webkit-transform: translateX(-10%);
-            transform: translateX(-10%);
+    -webkit-transform: translateX(0%);
+            transform: translateX(0%);
   }
-  10% {
-    -webkit-transform: translateX(10%);
-            transform: translateX(10%);
+  20% {
+    -webkit-transform: translateX(20%);
+            transform: translateX(20%);
   }
-  30% {
-    -webkit-transform: translateX(30%);
-            transform: translateX(30%);
+  40% {
+    -webkit-transform: translateX(40%);
+            transform: translateX(40%);
   }
-  50% {
-    -webkit-transform: translateX(50%);
-            transform: translateX(50%);
+  60% {
+    -webkit-transform: translateX(60%);
+            transform: translateX(60%);
   }
-  70% {
-    -webkit-transform: translateX(70%);
-            transform: translateX(70%);
+  80% {
+    -webkit-transform: translateX(80%);
+            transform: translateX(80%);
   }
   100% {
     -webkit-transform: translateX(100%);
