@@ -134,7 +134,7 @@ body .index-container .soon {
 
 body .index-container .soon:after {
   display: block;
-  content: 'coming';
+  content: 'coming soon';
   -webkit-animation: yAxis 3.5s infinite ease-out;
           animation: yAxis 3.5s infinite ease-out;
 }
