@@ -122,21 +122,16 @@ body .index-container .name #family {
 }
 
 body .index-container .soon {
-  font-family: "Roboto", sans-serif;
-  font-size: 3.5vh;
-  color: white;
   width: 100%;
+  height: 30%;
   position: absolute;
-  bottom: 25%;
-  -webkit-animation: xAxis 3.5s infinite ease-in;
-          animation: xAxis 3.5s infinite ease-in;
+  bottom: 10%;
 }
 
-body .index-container .soon:after {
-  display: block;
-  content: 'coming soon';
-  -webkit-animation: yAxis 3.5s infinite ease-out;
-          animation: yAxis 3.5s infinite ease-out;
+body .index-container .soon text {
+  font-family: "Roboto", sans-serif;
+  font-size: 3.5vh;
+  fill: white;
 }
 
 body .index-container .location {
@@ -175,106 +170,6 @@ body .index-container .social {
 body .index-container .social:hover {
   -webkit-transform: scale(1.5);
           transform: scale(1.5);
-}
-
-@-webkit-keyframes yAxis {
-  0% {
-    -webkit-transform: translateY(-30px);
-            transform: translateY(-30px);
-  }
-  25% {
-    -webkit-transform: translateY(30px);
-            transform: translateY(30px);
-  }
-  50% {
-    -webkit-transform: translateY(-30px);
-            transform: translateY(-30px);
-  }
-  75% {
-    -webkit-transform: translateY(30px);
-            transform: translateY(30px);
-  }
-  100% {
-    -webkit-transform: translateY(-30px);
-            transform: translateY(-30px);
-  }
-}
-
-@keyframes yAxis {
-  0% {
-    -webkit-transform: translateY(-30px);
-            transform: translateY(-30px);
-  }
-  25% {
-    -webkit-transform: translateY(30px);
-            transform: translateY(30px);
-  }
-  50% {
-    -webkit-transform: translateY(-30px);
-            transform: translateY(-30px);
-  }
-  75% {
-    -webkit-transform: translateY(30px);
-            transform: translateY(30px);
-  }
-  100% {
-    -webkit-transform: translateY(-30px);
-            transform: translateY(-30px);
-  }
-}
-
-@-webkit-keyframes xAxis {
-  0% {
-    -webkit-transform: translateX(0%);
-            transform: translateX(0%);
-  }
-  20% {
-    -webkit-transform: translateX(20%);
-            transform: translateX(20%);
-  }
-  40% {
-    -webkit-transform: translateX(40%);
-            transform: translateX(40%);
-  }
-  60% {
-    -webkit-transform: translateX(60%);
-            transform: translateX(60%);
-  }
-  80% {
-    -webkit-transform: translateX(80%);
-            transform: translateX(80%);
-  }
-  100% {
-    -webkit-transform: translateX(100%);
-            transform: translateX(100%);
-  }
-}
-
-@keyframes xAxis {
-  0% {
-    -webkit-transform: translateX(0%);
-            transform: translateX(0%);
-  }
-  20% {
-    -webkit-transform: translateX(20%);
-            transform: translateX(20%);
-  }
-  40% {
-    -webkit-transform: translateX(40%);
-            transform: translateX(40%);
-  }
-  60% {
-    -webkit-transform: translateX(60%);
-            transform: translateX(60%);
-  }
-  80% {
-    -webkit-transform: translateX(80%);
-            transform: translateX(80%);
-  }
-  100% {
-    -webkit-transform: translateX(100%);
-            transform: translateX(100%);
-  }
 }
 
 @media only screen and (min-width: 375px) and (orientation: landscape) {
@@ -322,7 +217,7 @@ body .index-container .social:hover {
     padding: .75rem;
   }
   body .index-container .soon {
-    bottom: 40%;
+    bottom: 25%;
     padding-top: 4vw;
     font-size: 4.5vh;
   }
