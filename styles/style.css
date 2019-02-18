@@ -56,6 +56,7 @@ html, body {
   font-size: 16px;
   height: 100%;
   width: 100%;
+  overflow: hidden;
 }
 
 body {
@@ -196,6 +197,7 @@ body .index-container .social:hover {
     background-repeat: no-repeat;
     background-size: cover;
     background-image: url("../assets/bar.jpg");
+    letter-spacing: normal;
   }
   body .index-container .name {
     display: -webkit-box;
