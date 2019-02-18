@@ -122,15 +122,21 @@ body .index-container .name #family {
 }
 
 body .index-container .soon {
-  width: 100%;
-  height: 30%;
   position: absolute;
   bottom: 15%;
+  left: -20%;
+  width: 100vw;
+  height: 100vh;
+}
+
+body .index-container .soon svg {
+  width: 150%;
+  height: 200%;
 }
 
 body .index-container .soon text {
   font-family: "Roboto", sans-serif;
-  font-size: 5.5vh;
+  font-size: 5rem;
   fill: white;
 }
 
@@ -218,7 +224,16 @@ body .index-container .social:hover {
   }
   body .index-container .soon {
     bottom: 20%;
-    font-size: 4.5vh;
+    width: 100vw;
+  }
+  body .index-container .soon svg {
+    width: 150%;
+    margin: auto;
+  }
+  body .index-container .soon text {
+    font-family: "Roboto", sans-serif;
+    font-size: 7vh;
+    fill: white;
   }
   body .index-container .location {
     font-size: 4vh;
