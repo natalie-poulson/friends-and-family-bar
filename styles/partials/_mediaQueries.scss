@@ -37,17 +37,10 @@ letter-spacing: normal;
                 }
             }
             .soon {
-                bottom:20%;
-                width:100vw;
-                // padding-top:4vw;
-                svg {
-                    width:150%;
-                    margin:auto;
-                }
+                bottom:-3vw;
+                padding-right:12vw;
                 text {
-                    font-family: $secondary-font;
                     font-size:7vh;
-                    fill:white;
                 }
             }
             .location {
