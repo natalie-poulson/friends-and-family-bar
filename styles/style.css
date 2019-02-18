@@ -152,6 +152,7 @@ body .index-container .location {
   position: absolute;
   bottom: 4%;
   color: white;
+  margin: .5rem 0;
 }
 
 body .index-container .contact {
@@ -163,6 +164,7 @@ body .index-container .contact {
   text-decoration: none;
   position: absolute;
   bottom: 1%;
+  margin: .5rem 0;
 }
 
 body .index-container .contact:hover {
