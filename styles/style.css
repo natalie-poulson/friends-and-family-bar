@@ -133,7 +133,7 @@ body .index-container .soon {
 }
 
 body .index-container .soon svg {
-  width: 150%;
+  width: 170%;
   height: 200%;
   overflow: hidden !important;
 }
@@ -233,6 +233,9 @@ body .index-container .social:hover {
   body .index-container .soon {
     bottom: -3vw;
     padding-right: 12vw;
+  }
+  body .index-container .soon svg {
+    width: 150%;
   }
   body .index-container .soon text {
     font-size: 7vh;
