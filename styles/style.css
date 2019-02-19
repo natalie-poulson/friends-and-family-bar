@@ -56,10 +56,11 @@ html, body {
   font-size: 16px;
   height: 100vh;
   width: 100vw;
-  overflow: hidden !important;
 }
 
 body {
+  overflow-y: hidden !important;
+  overflow-x: hidden !important;
   background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.3)), to(rgba(0, 0, 0, 0.3))), url("../assets/bar.jpg");
   background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../assets/bar.jpg");
   background-position: left;
@@ -74,7 +75,6 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  overflow: hidden !important;
 }
 
 body .index-container {
@@ -100,6 +100,7 @@ body .index-container .name {
   position: absolute;
   bottom: 42%;
   left: 0%;
+  overflow: hidden !important;
 }
 
 body .index-container .name h1 {
