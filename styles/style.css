@@ -64,8 +64,8 @@ html, body {
 body {
   overflow-y: hidden !important;
   overflow-x: hidden !important;
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.3)), to(rgba(0, 0, 0, 0.3))), url("../assets/bar.jpg");
-  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../assets/bar.jpg");
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.3)), to(rgba(0, 0, 0, 0.3))), url("../assets/bar-optimized.jpg");
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../assets/bar-optimized.jpg");
   background-position: left;
   background-repeat: no-repeat;
   background-size: cover;
@@ -207,7 +207,7 @@ body .index-container .social:hover {
     background-position: top;
     background-repeat: no-repeat;
     background-size: cover;
-    background-image: url("../assets/bar.jpg");
+    background-image: url("../assets/bar-optimized.jpg");
     letter-spacing: normal;
   }
   body .index-container .name {
