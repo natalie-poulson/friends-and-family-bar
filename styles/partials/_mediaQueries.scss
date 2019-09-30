@@ -1,67 +1,34 @@
-@media only screen and (min-width:375px) and (orientation: landscape){
-    html,body {
-        font-size:16px;
-    }
-    #friends, #and, #family {
-        padding:.75rem;
-    }
-}
-
-@media only screen and (min-width:500px){
-    html,body {
-        font-size:16px;
-    }
-    body {
-   
-        // background: linear-gradient(rgba(255,255,255,.2), rgba(255,255,255,.2)), url('../../assets/bar.jpg');
+@media screen and (min-width:800px){
+    body {  
         background-position:top;
-        background-repeat:no-repeat;
-        background-size:cover;
-        background-image: url('../assets/bar-optimized.jpg');
-letter-spacing: normal;
-        .index-container {
-            .name {
-                display:flex;
-                flex-direction: column;
-                justify-content: center;
-                align-items:center;
-                position:static;
-                margin-top:5vh;
-                margin-right:10vh;
-                h1 {
-                    color:hsl(154,30,44); 
-                    font-size:8.5vh;
-                }
-                #friends, #and, #family {
-                    padding:.75rem;
-                }
-            }
-            .soon {
-                bottom:-3vw;
-                padding-right:12vw;
-                svg {
-                    width:150%;
-                }
-                text {
-                    font-size:7vh;
-                }
-            }
-            .location {
-                font-size:4vh;
-                color:hsl(154,30,44);
-                bottom:4.5%;
-            }
-            .social {
-                top:95%;
-                font-size:4vh;
-            }
-            .contact {
-                font-size:3vh;
-                left:2%;
-                &:hover {
-                    transform:scale(1.05);
-                }
-            }
-        }
+    //     background-image: url('../assets/bar-optimized.jpg');
+    //     main {
+    //         .animation {
+    //             bottom:-3vw;
+    //             padding-right:12vw;
+    //             svg {
+    //                 width:150%;
+    //             }
+    //             text {
+    //                 font-size:7vh;
+    //             }
+    //         }
+    //         .location {
+    //             font-size:4vh;
+    //             color:hsl(154,30,44);
+    //             bottom:4.5%;
+    //         }
+    //         .social {
+    //             top:95%;
+    //             font-size:4vh;
+    //         }
+    //         .contact {
+    //             font-size:3vh;
+    //             left:2%;
+    //             &:hover {
+    //                 transform:scale(1.05);
+    //             }
+    //         }
+    //     }
     }
 }

@@ -1,7 +1,6 @@
 @import './partials/reset';
 @import './partials/variables';
 
-
 html,body {
     font-size:16px;
     height:100vh;
@@ -14,99 +13,72 @@ html,body {
 body {
     overflow-y:hidden !important;
     overflow-x:hidden !important;
-    background: linear-gradient(rgba(0,0,0,.3), rgba(0,0,0,.3)), url('../assets/bar-optimized.jpg');
+    background: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.6)) , url('../assets/bar-optimized.jpg');
     background-position:left;
+    @media only screen and (min-width: 900px){
+        background-position:top;
+    }
     background-repeat:no-repeat;
     background-size:cover;
     display:flex;
+    flex-direction:column;
     justify-content: center;
     align-items: center;
-    position:relative;
-    .index-container {
-        width:95%;
-        height:95%;
+    img {
+        width:50%;
+        @media only screen and (min-width: 1200px){
+            width:25%;
+        }
+        @media only screen and (min-width: 900px) and (max-width:1200px){
+            width:35%;
+        }
+    }
+    h2{
+        font-size:2em;
+        margin-bottom:.7em;
+        font-family: $secondary-font;
+        color:white;
+    }
+    .icons {
         display:flex;
-        flex-direction:column;
-        align-items:center;
-        overflow:hidden !important;
-        .name {
-            transform:rotate(-18deg);
-            text-align:right;
-            position:absolute;
-            bottom:42%; 
-            left:0%;
-            overflow:hidden !important;
-            h1 {
-                font-family: $primary-font;
-                color:white;
-                font-size:7vh;
-            }
-            #friends{
-                padding-left:7rem;
-            }
-            #and {
-                padding-top:10vh;
-                padding-bottom:10vh;
-                padding-left:3rem;
-                text-align:left;
-            }
-            #family {
-                padding-right:3.5rem;
-            }
+        justify-content: space-evenly;
+        width:50%;
+        @media only screen and (min-width: 1200px){
+            width:25%;
         }
-        .soon {
-            overflow:hidden !important;
-            position:absolute;
-            bottom:10%;
-            width:100%;
-            height:100%;
-            padding-right:4rem;
-            svg {
-                width:170%;
-                height:200%;
-                overflow:hidden !important;
-            }
-            text {
-                font-family: $secondary-font;
-                font-size:5rem;
-                fill:white;
-                overflow:hidden !important;
-            }
+        @media only screen and (min-width: 900px) and (max-width:1200px){
+            width:35%;
         }
-        .location {
-            font-family: $primary-font;
+        a {
+            font-size:3.5vh;
             text-align:center;
-            font-size:3vh;
-            position:absolute;
-            bottom:4%;
-            color:white;
-            margin:.5rem 0;
-        }
-        .contact {
-            font-size:2.5vh;
-            text-align:center;
-            font-size:2vh;
             font-family: $secondary-font;
             color:white;
             text-decoration: none;
-            position:absolute;
-            bottom:1%;
-            margin:.5rem 0;
             &:hover {
                 transform:scale(1.2);
-            }
-        }
-        .social {  
-            font-size:3vh;
-            color:white;
-            position:absolute;
-            bottom:2%;
-            right:2%;
-            &:hover {
-                transform:scale(1.5);
             }
         }
     }
 }
 
-@import './partials/mediaQueries';
+// footer {
+//     margin-top:1em;
+//     display:flex;
+//     justify-content: center;
+//     width:100%;
+//     .animation{
+//         svg{
+//             width:100%;
+//             display:flex;
+//             justify-content: center;
+//             text {
+//                 fill:white;
+//                 font-size:2em;
+//                 font-family: $secondary-font;
+//             }
+//         }
+//     } 
+// }
+
+
