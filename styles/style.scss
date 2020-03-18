@@ -5,14 +5,20 @@ html,body {
     font-size:16px;
     height:100vh;
     width:100vw;
+    overflow: hidden !important;
     margin:0;
     padding:0;
-    overflow:hidden !important;
+    display:flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
 }
 
 body {
-    overflow-y:hidden !important;
-    overflow-x:hidden !important;
+    overflow-x: hidden !important;
+    overflow-y: hidden !important;
+    height:90vh;
+    overflow:scroll;
     background: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.6)) , url('../assets/bar-optimized.jpg');
     background-position:left;
     @media only screen and (min-width: 900px){
@@ -20,16 +26,15 @@ body {
     }
     background-repeat:no-repeat;
     background-size:cover;
-    display:flex;
-    flex-direction:column;
-    justify-content: center;
-    align-items: center;
     img {
         width:50%;
-        @media only screen and (min-width: 1200px){
+        @media only screen and (min-width: 1400px){
+            width:20%;
+        }
+        @media only screen and (min-width: 1000px) and (max-width:1400px){
             width:25%;
         }
-        @media only screen and (min-width: 900px) and (max-width:1200px){
+        @media only screen and (min-width: 700px) and (max-width:1000px){
             width:35%;
         }
     }
@@ -39,14 +44,26 @@ body {
         font-family: $secondary-font;
         color:white;
     }
+    a {
+        text-decoration: none;
+    }
+    h3{
+        font-size:1.5em;
+        margin:.7em;
+        font-family: $secondary-font;
+        color:white; 
+    }
     .icons {
         display:flex;
         justify-content: space-evenly;
         width:50%;
-        @media only screen and (min-width: 1200px){
+        @media only screen and (min-width: 1400px){
             width:25%;
         }
-        @media only screen and (min-width: 900px) and (max-width:1200px){
+        @media only screen and (min-width: 1000px) and (max-width:1400px){
+            width:25%;
+        }
+        @media only screen and (min-width: 700px) and (max-width:1000px){
             width:35%;
         }
         a {
@@ -61,6 +78,26 @@ body {
         }
     }
 }
+
+svg{
+    overflow:visible;
+    width:100%;
+    text {
+        letter-spacing: 3px;
+        font-family: $secondary-font;
+        font-size:3em;
+        @media only screen and (min-width: 1400px){
+            font-size:1.5em;
+        }
+        @media only screen and (min-width: 1000px) and (max-width:1400px){
+            font-size:1.5em;
+        }
+        @media only screen and (min-width: 700px) and (max-width:1000px){
+            font-size:2em;
+        }
+    }
+}
+
 
 // footer {
 //     margin-top:1em;

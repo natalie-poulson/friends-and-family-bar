@@ -56,19 +56,9 @@ html, body {
   font-size: 16px;
   height: 100vh;
   width: 100vw;
+  overflow: hidden !important;
   margin: 0;
   padding: 0;
-  overflow: hidden !important;
-}
-
-body {
-  overflow-y: hidden !important;
-  overflow-x: hidden !important;
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.8)), to(rgba(0, 0, 0, 0.6))), url("../assets/bar-optimized.jpg");
-  background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.6)), url("../assets/bar-optimized.jpg");
-  background-position: left;
-  background-repeat: no-repeat;
-  background-size: cover;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -84,6 +74,18 @@ body {
           align-items: center;
 }
 
+body {
+  overflow-x: hidden !important;
+  overflow-y: hidden !important;
+  height: 90vh;
+  overflow: scroll;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.8)), to(rgba(0, 0, 0, 0.6))), url("../assets/bar-optimized.jpg");
+  background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.6)), url("../assets/bar-optimized.jpg");
+  background-position: left;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 @media only screen and (min-width: 900px) {
   body {
     background-position: top;
@@ -94,13 +96,19 @@ body img {
   width: 50%;
 }
 
-@media only screen and (min-width: 1200px) {
+@media only screen and (min-width: 1400px) {
+  body img {
+    width: 20%;
+  }
+}
+
+@media only screen and (min-width: 1000px) and (max-width: 1400px) {
   body img {
     width: 25%;
   }
 }
 
-@media only screen and (min-width: 900px) and (max-width: 1200px) {
+@media only screen and (min-width: 700px) and (max-width: 1000px) {
   body img {
     width: 35%;
   }
@@ -109,6 +117,17 @@ body img {
 body h2 {
   font-size: 2em;
   margin-bottom: .7em;
+  font-family: "Roboto", sans-serif;
+  color: white;
+}
+
+body a {
+  text-decoration: none;
+}
+
+body h3 {
+  font-size: 1.5em;
+  margin: .7em;
   font-family: "Roboto", sans-serif;
   color: white;
 }
@@ -123,13 +142,19 @@ body .icons {
   width: 50%;
 }
 
-@media only screen and (min-width: 1200px) {
+@media only screen and (min-width: 1400px) {
   body .icons {
     width: 25%;
   }
 }
 
-@media only screen and (min-width: 900px) and (max-width: 1200px) {
+@media only screen and (min-width: 1000px) and (max-width: 1400px) {
+  body .icons {
+    width: 25%;
+  }
+}
+
+@media only screen and (min-width: 700px) and (max-width: 1000px) {
   body .icons {
     width: 35%;
   }
@@ -146,5 +171,34 @@ body .icons a {
 body .icons a:hover {
   -webkit-transform: scale(1.2);
           transform: scale(1.2);
+}
+
+svg {
+  overflow: visible;
+  width: 100%;
+}
+
+svg text {
+  letter-spacing: 3px;
+  font-family: "Roboto", sans-serif;
+  font-size: 3em;
+}
+
+@media only screen and (min-width: 1400px) {
+  svg text {
+    font-size: 1.5em;
+  }
+}
+
+@media only screen and (min-width: 1000px) and (max-width: 1400px) {
+  svg text {
+    font-size: 1.5em;
+  }
+}
+
+@media only screen and (min-width: 700px) and (max-width: 1000px) {
+  svg text {
+    font-size: 2em;
+  }
 }
 /*# sourceMappingURL=style.css.map */

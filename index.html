@@ -7,73 +7,45 @@
 		<link href="https://fonts.googleapis.com/css?family=Bungee+Shade|Roboto:300" rel="stylesheet">
 		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
 		<link href="./styles/style.css" rel="stylesheet" type="text/css">
-		<title>FRIENDS AND FAMILY</title>
+		<title>FRIENDS AND FAMILY BAR</title>
 	</head>
 	<body>
 		<img src='./assets/logo.png'>
 		<h2> OAKLAND, CA </h2>
 		<div class = "icons">
 			<a href ='mailto:blake@friendsandfamilybar.com'><i class="far fa-envelope"></i></a> 
-			<a href ='https://www.kickstarter.com/projects/friendsandfamily/friends-and-family-0?ref=project_link' target='_blank'><i class="fab fa-kickstarter"></i></a>
+			<!-- <a href ='https://www.kickstarter.com/projects/friendsandfamily/friends-and-family-0?ref=project_link' target='_blank'><i class="fab fa-kickstarter"></i></a> -->
 			<a href ='https://www.instagram.com/friendsandfamilybar/' target='_blank'><i class="fab fa-instagram" ></i></a>
 		</div>
+		<a href='https://squareup.com/gift/H06WEP06ZPJ46/order' target='_blank'><h3>Buy a gift card</h3></a>
+		<svg width="100vw" height="160px" viewBox="0 0 1098.72 89.55">
+			<path  id="curve" fill="transparent" d="M0.17,0.23c0,0,105.85,77.7,276.46,73.2s243.8-61.37,408.77-54.05c172.09,7.64,213.4,92.34,413.28,64.19"></path>
+			<text>
+				<textPath style="transform:translate3d(0,0,0);" alignment-baseline="top" xlink:href="#curve">coming soon</textPath>		
+				<animate id='animataion' attributeType="XML" attributeName="x" from='-500' to='1098.72'   repeatCount="indefinite" />
+			</text>
+		</svg>
 	</body>
-	<!-- <footer>			
-		<div class="animation">
-			<svg version="1.1" id="Default" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-			<path fill="none"  d="M14.2 65.54s36-36.79 56.31-35.66 38.6 27.31 58.13 26.56 26.34-5.91 37.6-13 30.53-19.52 39.48-19.14 19.48 8.23 31.12 19.87 18.91 13.2 25.25 13.16S278.24 58 297 40.76s25.86-17.86 31.49-17.86 48.11 15.42 65 13.27" id="theMotionPath"/>
-					<text x = "-15"> c
-						<animateMotion id='o1' begin= '0;o1.end' dur="6s" >
-						<mpath xlink:href="#theMotionPath"/>
-						</animateMotion>
-					</text>
-					<text x = "-15">o
-							<animateMotion begin='o1.begin-.35s'dur="6s" >
-						<mpath xlink:href="#theMotionPath"/>
-						</animateMotion>
-					</text>
-					<text x = "-15">m
-						<animateMotion  begin='o1.begin-.70s'dur="6s">
-						<mpath xlink:href="#theMotionPath"/>
-						</animateMotion>
-					</text>
-					<text x = "-15">i
-						<animateMotion  begin='o1.begin-1.2s'dur="6s" >
-						<mpath xlink:href="#theMotionPath"/>
-						</animateMotion>
-					</text>
-					<text x = "-15">n
-						<animateMotion  begin='o1.begin-1.45s'dur="6s" >
-						<mpath xlink:href="#theMotionPath"/>
-						</animateMotion>
-					</text>
-					<text x = "-15">g
-						<animateMotion begin='o1.begin-1.8s' dur="6s" >
-						<mpath xlink:href="#theMotionPath"/>
-						</animateMotion>
-					</text>
-	
-					<text x = "-15">s
-							<animateMotion  begin='o1.begin-2.7s'dur="6s" >
-							<mpath xlink:href="#theMotionPath"/>
-							</animateMotion>
-						</text>
-						<text x = "-15">o
-							<animateMotion  begin='o1.begin-3.05s'dur="6s">
-							<mpath xlink:href="#theMotionPath"/>
-							</animateMotion>
-						</text>
-						<text x = "-15">o
-							<animateMotion  begin='o1.begin-3.4s'dur="6s" >
-							<mpath xlink:href="#theMotionPath"/>
-							</animateMotion>
-						</text>
-						<text x = "-15">n
-							<animateMotion begin='o1.begin-3.8s' dur="6s" >
-							<mpath xlink:href="#theMotionPath"/>
-							</animateMotion>
-						</text>
-				</svg>
-			</div>
-	</footer>
-</html> -->
+	<script>
+	let animate = document.querySelector("animate");
+	let svg = document.querySelector("svg");
+	let textPath = document.querySelector("textPath");
+
+	const setDuration = (e) => {
+		let windowWidth = window.innerWidth
+		if (windowWidth > 1200){
+			animate.setAttribute("dur", windowWidth / 300 )
+			textPath.setAttribute('fill', 'white')
+		} else if (windowWidth < 800){
+			animate.setAttribute("dur", '3s')
+			textPath.setAttribute('fill', 'white')
+		} else { 
+		animate.setAttribute("dur", windowWidth / 250 )
+		textPath.setAttribute('fill', 'white')
+		}
+	}
+
+	document.addEventListener("DOMContentLoaded", setDuration);
+	window.addEventListener("resize", setDuration);
+	</script>
+</html> 
